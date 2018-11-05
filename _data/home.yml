@@ -1,50 +1,38 @@
 intro:
-  lead-in: "Welcome To Our Studio!"
-  heading: It's Nice To Meet You
+  lead-in: "Welcome to Our wedding site!"
+  heading: May 18th 2019
   btn: Tell Me More
 
-services:
-  heading: Services
-  subheading: Lorem ipsum dolor sit amet consectetur.
-  service:
-    - icon: fa fa-shopping-cart
-      heading: E-Commerce
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-    - icon: fa fa-laptop
-      heading: Responsive Design
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-    - icon: fa fa-lock
-      heading: Web Security
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+schedule:
+  heading: Schedule
+  subheading: Our plan for the weekend!
+  timeline:
+    - image: img/about/1.jpg
+      date: 17th May - 6pm
+      title: Friday Night
+      text: Meet for drinks in La Cala de Mijas.
+    - image: img/about/2.jpg
+      date: 18th May - 5pm 
+      title: Wedding Ceremony
+      text: Santa Domingo Church in Benalmadena.
+    - image: img/about/3.jpg
+      date: 18th May - 7pm
+      title: Reception Dinner and Drinks
+      text: Villa location just outside La Cala de Mijas.
+      date: 19th May - 4pm
+      title: BBQ at the villa
+      text: BBQ to finish off the weekend.
+
+  end1: Hope You
+  end2: Can Join Us!
+
+locations:
+  heading: location
+  subheading: Where we will be.
 
 portfolio:
   heading: Portfolio
   subheading: Lorem ipsum dolor sit amet consectetur.
-
-about:
-  heading: About
-  subheading: Lorem ipsum dolor sit amet consectetur.
-  timeline:
-    - image: img/about/1.jpg
-      date: 2009-2011
-      title: Our Humble Beginnings
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/2.jpg
-      date: March 2011
-      title: An Agency is Born
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/3.jpg
-      date: December 2012
-      title: Transition to Full Service
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/4.jpg
-      date: July 2014
-      title: Phase Two Expansion
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-
-  end1: Be Part
-  end2: Of Our
-  end3: Story!
 
 team:
   heading: Our Amazing Team
@@ -97,7 +85,7 @@ clients:
 
 contact:
   heading: Contact Us
-  subheading: Lorem ipsum dolor sit amet consectetur.
+  subheading: Looking forward to receiving your R.S.V.P.
   name: Your Name *
   name-required: Please enter your name.
   email: Your Email *

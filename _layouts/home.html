@@ -17,28 +17,65 @@ layout: default
       </div>
     </header>
 
-    <!-- Services -->
-    <section id="services">
+
+    <!-- About -->
+    <section id="schedule">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">{{ site.data.home.services.heading }}</h2>
-            <h3 class="section-subheading text-muted">{{ site.data.home.services.subheading }}</h3>
+            <h2 class="section-heading text-uppercase">{{ site.data.home.schedule.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.schedule.subheading  }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              {%- for time in site.data.home.schedule.timeline -%}
+              {% assign ws = '' %}
+              <li{% cycle '', ' class="timeline-inverted"' %}>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="{{ assets_path }}{{ time.image }}" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>{{ time.date }}</h4>
+                    <h4 class="subheading">{{ time.title }}</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">{{ time.text  }}</p>
+                  </div>
+                </div>
+              </li>
+              {%- endfor -%}
+              {% assign ws = '' %}
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>{{ site.data.home.schedule.end1 }}
+                    <br>{{ site.data.home.schedule.end2 }}
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section id="locations">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.locations.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.locations.subheading }}</h3>
           </div>
         </div>
         <div class="row text-center">
-          {%- for service in site.data.home.services.service -%}
-          {% assign ws = '' %}
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="{{ service.icon }} fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">{{ service.heading }}</h4>
-            <p class="text-muted">{{ service.text }}</p>
-          </div>
-          {%- endfor -%}
-        {% assign ws = '' %}
+             {% google_map 
+              src="_data/places.yaml"
+              zoom="11"
+              width="100%"
+              height="500" %}
         </div>
       </div>
     </section>
@@ -71,49 +108,6 @@ layout: default
           </div>
           {%- endfor -%}
         {% assign ws = '' %}
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">{{ site.data.home.about.heading }}</h2>
-            <h3 class="section-subheading text-muted">{{ site.data.home.about.subheading  }}</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              {%- for time in site.data.home.about.timeline -%}
-              {% assign ws = '' %}
-              <li{% cycle '', ' class="timeline-inverted"' %}>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="{{ assets_path }}{{ time.image }}" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>{{ time.date }}</h4>
-                    <h4 class="subheading">{{ time.title }}</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">{{ time.text  }}</p>
-                  </div>
-                </div>
-              </li>
-              {%- endfor -%}
-              {% assign ws = '' %}
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>{{ site.data.home.about.end1 }}
-                    <br>{{ site.data.home.about.end2 }}
-                    <br>{{ site.data.home.about.end3 }}</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>

@@ -9,3 +9,10 @@ assets_path: ''
 
 collections:
   projects:
+
+gems:
+    - jekyll-maps
+
+maps:
+  google:
+    api_key: AIzaSyCT9xsvxmWo1wnxPaywExEJ_Cc5Qlgyvas

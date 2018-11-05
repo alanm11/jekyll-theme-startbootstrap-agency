@@ -1,28 +1,18 @@
 brand:
-  name: Start Bootstrap
+  name: Yvonne & Alan
 menu-string: Menu
 
 nav:
-  - title: Services
-    url: '#services'
-  - title: Portfolio
-    url: '#portfolio'
-  - title: About
-    url: '#about'
-  - title: Team
-    url: '#team'
-  - title: Contact
+  - title: Schedule
+    url: '#schedule'
+  - title: Location
+    url: '#locations'
+  - title: Travel/Accomodation
+    url: '#travel'
+  - title: RSVP
     url: '#contact'
 
-copyright: Copyright &copy; Your Website 2018
-
-social-buttons:
-  - icon: fa fa-twitter
-    url: '#' 
-  - icon: fa fa-facebook
-    url: '#'
-  - icon: fa fa-linkedin
-    url: '#'
+copyright: Copyright &copy; Yvonne and Alan 2018
 
 quicklinks:
   - title: Privacy Policy
