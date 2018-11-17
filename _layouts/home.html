@@ -71,11 +71,9 @@ layout: default
           </div>
         </div>
         <div class="row text-center">
-             {% google_map 
-              src="_data/places.yaml"
-              zoom="11"
-              width="100%"
-              height="500" %}
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1Z2seNQDp3aKFI_kE1YgTsaq6t8Se46OR" width="100%" height="500">
+          </iframe>
         </div>
       </div>
     </section>
@@ -83,16 +81,16 @@ layout: default
     <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
       <div class="container">
-        <div class="row">
+        <div class="row" >
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">{{ site.data.home.portfolio.heading }}</h2>
             <h3 class="section-subheading text-muted">{{ site.data.home.portfolio.subheading }}</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row" align="center">
           {%- for project in site.projects -%}
           {% assign ws = '' %}
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-6 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ project.id | replace: '/projects/', '' }}">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -102,69 +100,10 @@ layout: default
               <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>{{ project.client }}</h4>
-              <p class="text-muted">{{ project.category }}</p>
+              <h4>{{ project.category }}</h4>
             </div>
           </div>
           {%- endfor -%}
-        {% assign ws = '' %}
-        </div>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">{{ site.data.home.team.heading }}</h2>
-            <h3 class="section-subheading text-muted">{{ site.data.home.team.subheading }}</h3>
-          </div>
-        </div>
-        <div class="row">
-          {%- for member in site.data.home.team.members -%}
-          {% assign ws = '' %}
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="{{ assets_path }}{{ member.img }}" alt="">
-              <h4>{{ member.name }}</h4>
-              <p class="text-muted">{{ member.role }}</p>
-              <ul class="list-inline social-buttons">
-                {%- for sm in member.social-buttons -%}
-                {% assign ws = '' %}
-                <li class="list-inline-item">
-                  <a href="{{ sm.url }}">
-                    <i class="{{ sm.icon }}"></i>
-                  </a>
-                </li>
-                {%- endfor -%}
-              {% assign ws = '' %}
-              </ul>
-            </div>
-          </div>
-          {%- endfor -%}
-        {% assign ws = '' %}
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">{{ site.data.home.team.text }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          {%- for client in site.data.home.clients -%}
-          {% assign ws = '' %}
-          <div class="col-md-3 col-sm-6">
-            <a href="{{ client.url }}">
-              <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ client.img }}" alt="">
-            </a>
-          </div>
-          {%-  endfor -%}
         {% assign ws = '' %}
         </div>
       </div>
