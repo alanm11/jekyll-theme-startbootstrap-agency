@@ -36,18 +36,16 @@ portfolio:
 
 contact:
   heading: Contact Us
-  subheading: Looking forward to receiving your R.S.V.P.
+  subheading: Looking forward to receiving your R.S.V.P and the name of a song you'd like to hear.
   name: Your Name *
   name-required: Please enter your name.
   email: Your Email *
   email-required: Please enter your email address.
-  phone: Your Phone *
-  phone-required: Please enter your phone number.
-  message: Your Message *
-  message-required: Please enter a message.
+  message: Your Message and song *
+  message-required: Please enter a message including a song.
   btn: Send Message
 
-  js-url: '././mail/contact_me.php'
+  js-url: '//formcarry.com/s/UvVx68MtFlG'
   js-success: 'Your message has been sent. '
   js-error: 'Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!'
   js-error-min: 'Sorry "+i+", it seems that my mail server is not responding. Please try again later!'
