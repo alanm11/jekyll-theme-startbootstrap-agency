@@ -7,7 +7,7 @@ nav:
     url: '#schedule'
   - title: Location
     url: '#locations'
-  - title: Travel/Accomodation
+  - title: Travel/Accommodation
     url: '#portfolio'
   - title: RSVP
     url: '#contact'
