@@ -98,10 +98,11 @@ layout: default
                 </div>
               </div>
               <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
+            
+              <div class="portfolio-caption">
+                <h4>{{ project.category }}</h4>
+              </div>
             </a>
-            <div class="portfolio-caption">
-              <h4>{{ project.category }}</h4>
-            </div>
           </div>
           {%- endfor -%}
         {% assign ws = '' %}
