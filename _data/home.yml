@@ -13,7 +13,7 @@ schedule:
       text: Meet for drinks in La Cala de Mijas.
     - image: img/about/church.jpeg
       date: 18th May - 5pm 
-      title: Wedding Ceremony & Reception
+      title: Wedding Ceremony
       text: Santa Domingo Church in Benalmadena.
     - image: img/about/reception.jpeg
       date: 18th May - 7pm
@@ -32,7 +32,7 @@ locations:
   subheading: Where everything takes place.
 
 portfolio:
-  heading: Travel/Accommodation
+  heading: Travel Advice
   subheading: Here are some details of how to get there and some recommended Accommodation.
 
 contact:
@@ -42,7 +42,7 @@ contact:
   name-required: Please enter your name.
   email: Your Email *
   email-required: Please enter your email address.
-  message: Your Message and song *
+  message: Your Message and a song you'd love to hear *
   message-required: Please enter a message including a song.
   btn: Send Message
 
