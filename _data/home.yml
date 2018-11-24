@@ -8,19 +8,19 @@ schedule:
   subheading: Our plan for the weekend!
   timeline:
     - image: img/about/drinks.jpeg
-      date: 17th May - 6pm
+      date: 17th May
       title: Friday Night
-      text: Meet for drinks in La Cala de Mijas.
+      text: Meet for drinks.
     - image: img/about/church.jpeg
       date: 18th May - 5pm 
       title: Wedding Ceremony
       text: Santa Domingo Church in Benalmadena.
     - image: img/about/reception.jpeg
-      date: 18th May - 7pm
+      date: 18th May
       title: Reception Dinner and Drinks
       text: Villa location just outside La Cala de Mijas.
     - image: img/about/bbq.jpeg
-      date: 19th May - 4pm
+      date: 19th May
       title: BBQ at the villa
       text: BBQ at the Villa to finish off the weekend.
 
@@ -37,7 +37,7 @@ portfolio:
 
 contact:
   heading: Let us know if you can join us
-  subheading: Looking forward to receiving your R.S.V.P and the name of a song you'd like to hear.
+  subheading: Looking forward to receiving your R.S.V.P and the name of a song you'd love to hear.
   name: Your Name *
   name-required: Please enter your name.
   email: Your Email *
